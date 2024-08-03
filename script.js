@@ -26,3 +26,11 @@ function loadTaskTasks() {
     }
 }
 
+function del(task) {
+    const index = tasks.indexOf(task);
+        tasks.splice(index, 1);
+    loadTaskTasks(); 
+}
+
+
+

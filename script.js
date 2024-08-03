@@ -31,6 +31,15 @@ function del(task) {
         tasks.splice(index, 1);
     loadTaskTasks(); 
 }
+function putTask() {
+    const input = document.querySelector('#input-btn')
+    const task = input.value; 
 
+ 
+    tasks.unshift(task);
+
+    input.value = '';  
+    loadTaskTasks()
+}
 
 
